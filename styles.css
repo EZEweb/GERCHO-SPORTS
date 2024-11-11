@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.6;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background-color: #283388;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  margin-top: 2rem;
+}
+
+.hero p {
+  font-size: 1rem;
+  color: #dbd8e2;
+  font-family: "Oswald", sans-serif; 
+}
+
+.logo-header {
+  display: block;
+  margin: 0 auto;
+  width: 100px; /* Ajusta el tamaño del logo en el header */
+}
+
+.title{
+  text-align: center;
+  color: #283388;
+  margin: 48px 0 -80px 0;
+}
+.conceptos {
+  display: flex;
+  flex-wrap:wrap;
+  align-content:center;
+  justify-content: space-around;
+  padding: 2rem;
+  gap: 1rem;
+  height: 600px;
+}
+
+.card {
+  display:grid;
+  align-content:space-evenly;
+  height: 50%;
+  background-color: #f9f9f9;
+  border: 2px solid #dcdcdc;
+  border-radius: 16px;
+  padding: 1rem;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  color: #003366;
+  font-family: "Oswald", sans-serif;
+}
+/* Botón en la tarjeta */
+.btn-card {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #283388;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Oswald", sans-serif;
+  transition: background-color 0.3s;
+}
+
+.btn-card:hover {
+  background-color: #005099;
+}
+
+
+.video-texto {
+  display: flex;
+  padding: 0;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.video {
+  flex: 1;
+  min-width: 300px;
+  height: 400px;
+}
+
+.video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.texto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 300px;
+}
+
+.texto h2 {
+  color: #003366;
+  font-family: "Oswald", sans-serif;
+}
+
+.bandera img{
+  width: 100%;
+  margin-top: -12px;
+  margin-bottom: -12px;
+  padding: 0;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #283388;
+  color: #ffffff;
+}
+
+.logo-footer {
+  width: 50px; /* Tamaño del logo en el footer */
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-family: "Oswald", sans-serif;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .conceptos {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap:nowrap
+  }
+
+  .card {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  .video-texto {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video, .texto {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+  .bandera img{
+    margin-top:120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .card {
+    width: 100%;
+    padding: 1rem;
+  }
+}
