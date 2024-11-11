@@ -92,6 +92,7 @@ body {
   padding: 0;
   gap: 1rem;
   flex-wrap: wrap;
+  background-color: #283388;
 }
 
 .video {
@@ -111,10 +112,12 @@ body {
   flex-direction: column;
   justify-content: center;
   min-width: 300px;
+  color: #cac8da;
+  text-align: left;
 }
 
 .texto h2 {
-  color: #003366;
+  color: #fff;
   font-family: "Oswald", sans-serif;
 }
 
@@ -180,6 +183,10 @@ footer a:hover {
   
   .bandera img{
     margin-top:120px;
+  }
+  .texto{
+    text-align: center;
+    margin-bottom: 40px;
   }
 }
 
